@@ -1,0 +1,89 @@
+# Basic Git and GitHub Commands
+
+# Configure Git
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+# Initialize a new Git repository
+git init
+
+# Clone an existing repository
+git clone <repository_url>
+
+# Check the status of your repository
+git status
+
+# Add files to the staging area
+git add <file_name>       # Add a specific file
+git add .                 # Add all files in the current directory
+
+# Commit changes
+git commit -m "Commit message"
+
+# View commit history
+git log
+
+# Push changes to a remote repository
+git push origin <branch_name>
+
+# Pull changes from a remote repository
+git pull origin <branch_name>
+
+# Create a new branch
+git branch <branch_name>
+
+# Switch to a branch
+git checkout <branch_name>
+
+# Create and switch to a new branch
+git checkout -b <branch_name>
+
+# Merge a branch into the current branch
+git merge <branch_name>
+
+# Delete a branch
+git branch -d <branch_name>       # Delete locally
+git push origin --delete <branch_name>  # Delete remotely
+
+# Add a remote repository
+git remote add origin <repository_url>
+
+# View remote repositories
+git remote -v
+
+# Remove a remote repository
+git remote remove <name>
+
+# Stash changes
+git stash
+git stash apply
+
+# Tagging
+git tag <tag_name>
+git push origin <tag_name>
+
+# Undo changes
+git reset --soft <commit_hash>    # Keep changes staged
+git reset --mixed <commit_hash>   # Unstage changes
+git reset --hard <commit_hash>    # Discard changes
+
+# Fetch changes from a remote repository
+git fetch
+
+# Rebase
+git rebase <branch_name>
+
+# Resolve merge conflicts
+# Edit conflicting files, then:
+git add <file_name>
+git commit
+
+# Fork and contribute
+# 1. Fork a repository on GitHub
+# 2. Clone your forked repository
+# 3. Create a new branch for your changes
+# 4. Push changes to your forked repository
+# 5. Create a pull request on GitHub
+
+# GitHub Authentication
+# Use SSH or Personal Access Token for authentication
